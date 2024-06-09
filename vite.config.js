@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["react", "react-dom", "locomotive-scroll"],
+      // Remove external option for react, react-dom, and locomotive-scroll
     },
   },
 });
