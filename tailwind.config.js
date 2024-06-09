@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+import filters from "tailwindcss-filters";
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [
-    require("tailwindcss-filters"), // Ensure this is included
+    filters, // Ensure this is included
   ],
 };
