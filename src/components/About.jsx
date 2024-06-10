@@ -6,7 +6,7 @@ export default function About() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div>
-      <div className="relative w-full py-28 p-14 bg-[#8cbcd3] rounded-tl-3xl rounded-tr-3xl text-[#000]">
+      <div className="relative w-full md:py-28 p-14 bg-[#8cbcd3] rounded-tl-3xl rounded-tr-3xl text-[#000]">
         {[
           "kíwë is a strategic partner for fast-grow­ing tech ",
           "businesses that need to raise funds, sell prod­ucts,",
@@ -14,7 +14,7 @@ export default function About() {
         ].map((item, index) => (
           <h1
             key={index}
-            className="font-['Neue_Montreal'] text-4xl md:text-[3.8vw] leading-8 md:leading-[3.5vw] tracking-tight"
+            className="font-['NeueMontreal-Regular'] text-4xl md:text-[3.8vw] leading-8 md:leading-[3.5vw] tracking-tight"
           >
             {item}
           </h1>
@@ -23,15 +23,15 @@ export default function About() {
           <hr className="border-t border-zinc-900 w-full absolute" />
         </div>
 
-        <div className="flex w-full justify-end items-end mt-14">
+        <div className="flex w-full justify-end items-end md:mt-14">
           <div className="w-1/2"></div>
 
-          <div className="border-b-[1px] md:mt-10 mt-6 w-1/3 border-white"></div>
+          <div className="border-b-[1px] md:mt-10 mt-6 w-1/2 border-white"></div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row mb-10 mt-6 md:mt-16 border-[#000000]">
+        <div className="w-full flex flex-col md:flex-row md:mb-10 mt-6 md:mt-16 border-[#000000]">
           <div className="w-full md:w-1/2">
-            <h1 className="md:text-5xl text-4xl font-[Neue_Montreals]">
+            <h1 className="md:text-5xl text-4xl font-[NeueMontreal-Regular]">
               Our approach :
             </h1>
             <a href="/about">
@@ -60,13 +60,13 @@ export default function About() {
               <div className="container  mx-auto">
                 <div className="flex flex-wrap w-full mb-4">
                   <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h1 className="font-['Neue_Montreal'] text-lg font-semibold title-font mb-2 text-gray-900">
+                    <h1 className="font-['NeueMontreal-Regular'] text-lg font-semibold title-font mb-2 text-gray-900">
                       Who are We?
                     </h1>
                     <div className="h-1 w-20 bg-indigo-500 rounded"></div>
                   </div>
                   <div className="lg:w-1/2 w-full flex flex-col">
-                    <p className="leading-relaxed text-lg mb-4 font-['Neue_Montreal'] font-bold text-gray-800">
+                    <p className="leading-relaxed text-lg mb-4 font-['NeueMontreal-Regular'] font-bold text-gray-800">
                       We are the Co-Founders of kíwë -
                     </p>
                     <p className="md:mb-8 mb-4 font-light text-gray-100">

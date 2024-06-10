@@ -6,7 +6,7 @@ export default function ServiceLanding() {
 
   return (
     <div className="md:px-14 px-6 pt-32 md:pt-36 ">
-      <h1 className="md:text-9xl text-6xl font-semibold uppercase font-['Founders_Grotesk_X-Condensed']">
+      <h1 className="md:text-8xl mb-8 text-5xl font-semibold uppercase font-['impact']">
         Services
       </h1>
       <div className="w-full flex justify-center  ">
@@ -155,10 +155,10 @@ export default function ServiceLanding() {
         <div className="p-6 md:mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="md:col-span-1">
-              <h2 className="text-lg font-['Neue_Montreal']">
+              <h2 className="text-lg font-['NeueMontreal-Regular']">
                 We accomplish this by adhering
               </h2>
-              <p className=" text-lg font-['Neue_Montreal']">
+              <p className=" text-lg font-['NeueMontreal-Regular']">
                 to a clear strategy:
               </p>
               <svg width="200" height="100" viewBox="0 0 560 200">

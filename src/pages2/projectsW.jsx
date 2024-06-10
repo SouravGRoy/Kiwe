@@ -14,7 +14,7 @@ export default function ProjectsW() {
   return (
     <div className="w-full py-20 bg-[#B23850] rounded-t-3xl">
       <div className="w-full border-b-[1px] border-zinc-700 pb-10 px-10 md:px-20">
-        <h1 className="text-4xl md:text-6xl font-['Neue_Montreal'] tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-['HelveticaNeue'] tracking-tight">
           Featured Work
         </h1>
       </div>
@@ -41,7 +41,9 @@ export default function ProjectsW() {
             <div className="card w-full h-full overflow-hidden rounded-lg md:max-w-[100%] lg:max-w-[100%] md:max-h-[40%] lg:max-h-[100%]">
               <div className="flex flex-row gap-2 mb-3">
                 <div className="w-2 h-2 mt-2 bg-zinc-100 rounded-full"></div>
-                <p className="font-['Neue_Montreal'] uppercase">Urban Escape</p>
+                <p className="font-['NeueMontreal-Regular'] uppercase">
+                  Urban Escape
+                </p>
               </div>
               <img className="w-full h-full bg-cover" src="./UE.jpg" alt="" />
             </div>
@@ -104,7 +106,9 @@ export default function ProjectsW() {
               </h1>
               <div className="flex flex-row gap-2 mb-3">
                 <div className="w-2 h-2 mt-2 bg-zinc-100 rounded-full"></div>
-                <p className="font-['Neue_Montreal'] uppercase">Job Hub</p>
+                <p className="font-['NeueMontreal-Regular'] uppercase">
+                  Job Hub
+                </p>
               </div>
               <img
                 className="w-full h-full bg-cover "
@@ -170,7 +174,9 @@ export default function ProjectsW() {
             <div className="card w-full h-full overflow-hidden rounded-lg md:max-w-[100%] lg:max-w-[100%] md:max-h-[40%] lg:max-h-[100%]">
               <div className="flex flex-row gap-2 mb-3">
                 <div className="w-2 h-2 mt-2 bg-zinc-100 rounded-full"></div>
-                <p className="font-['Neue_Montreal'] uppercase">Vermont</p>
+                <p className="font-['NeueMontreal-Regular'] uppercase">
+                  Vermont
+                </p>
               </div>
               <img
                 className="w-full h-full bg-cover"
@@ -237,7 +243,7 @@ export default function ProjectsW() {
               </h1>
               <div className="flex flex-row gap-2 mb-3">
                 <div className="w-2 h-2 mt-2 bg-zinc-100 rounded-full"></div>
-                <p className="font-['Neue_Montreal'] uppercase">QRGEN</p>
+                <p className="font-['NeueMontreal-Regular'] uppercase">QRGEN</p>
               </div>
               <img
                 className="w-full h-full bg-cover "

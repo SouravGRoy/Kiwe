@@ -14,10 +14,10 @@ const Card = ({ title, description, imageSrc }) => {
       />
       <div className="absolute inset-0 bg-gray-900 opacity-0 hover:opacity-75 transition-opacity duration-300">
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h2 className="text-xl font-['Neue_Montreal'] mb-2 text-[#ADBBDA] font-semibold">
+          <h2 className="text-xl font-['NeueMontreal-Regular'] mb-2 text-[#ADBBDA] font-semibold">
             {title}
           </h2>
-          <p className="text-white font-['Neue_Montreal'] text-center">
+          <p className="text-white font-['NeueMontreal-Regular'] text-center">
             {description}
           </p>
         </div>
@@ -31,7 +31,12 @@ const Card = ({ title, description, imageSrc }) => {
 
 export default function Youtube() {
   return (
-    <div className="md:px-14 px-6 pt-32 md:pt-36 ">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-1"
+      className="md:px-14 px-6 pt-32 md:pt-36 "
+    >
       <h1 className="md:text-9xl text-6xl font-semibold uppercase font-['Founders_Grotesk_X-Condensed']">
         Insights
       </h1>
@@ -39,7 +44,7 @@ export default function Youtube() {
         <hr className="border-t border-[#3D52A0] w-full absolute " />
       </div>
       <div className="flex justify-between flex-wrap">
-        <h1 className="font-['Neue_Montreal'] pt-3 text-md">
+        <h1 className="font-['NeueMontreal-Regular'] pt-3 text-md">
           Latest Insights:
         </h1>
         <div className="flex mt-3  gap-4">
@@ -84,7 +89,7 @@ export default function Youtube() {
               description="LostSpace is the fastest growing Music Studio in WB"
               imageSrc={"./youtube1.png"}
             />
-            <h1 className="px-2 font-['Neue_Montreal'] text-start text-[#EDE8F5]">
+            <h1 className="px-2 font-['NeueMontreal-Regular'] text-start text-[#EDE8F5]">
               GENRE: EDM, House, Electropop......
             </h1>
           </div>
@@ -94,7 +99,7 @@ export default function Youtube() {
               description="Kiwe is a Community Social Meida(Currently in Progress) "
               imageSrc={"./commune.png"}
             />
-            <h1 className="px-2 font-['Neue_Montreal'] rounded-full border-[1px] text-start text-[#ede8f59a]">
+            <h1 className="px-2 font-['NeueMontreal-Regular'] rounded-full border-[1px] text-start text-[#ede8f59a]">
               - In Progress
             </h1>
           </div>

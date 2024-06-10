@@ -1,8 +1,21 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { useLayoutEffect, useState } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
+import LocomotiveScroll from "locomotive-scroll";
 
 export default function Landing() {
+  const locomotiveScroll = new LocomotiveScroll();
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useLayoutEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div
       data-scroll
@@ -18,11 +31,14 @@ export default function Landing() {
                 {index === 1 && (
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "10vw" }}
+                    animate={{ width: width <= 768 ? "14vw" : "9vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.5 }}
                     className="w-12 md:w-[6vw] relative md:h-[5.3vw] h-9 overflow-hidden"
                   >
-                    <img src="/cloud3.png" className="rounded-md h-full " />
+                    <img
+                      src="/cloud3.png"
+                      className="rounded-md md:mt-0 mt-1 h-full "
+                    />
                   </motion.div>
                 )}
                 <h1 className="uppercase text-4xl md:text-5xl lg:text-7xl md:leading-[4.5vw] tracking-tighter font-['Founders_Grotesk'] ">
@@ -34,7 +50,10 @@ export default function Landing() {
         })}
         <div className="masker">
           <h1 className="uppercase text-5xl md:text-6xl lg:text-8xl  tracking-tighter font-['Founders_Grotesk']">
-            We build <span className="font-semibold md:pl-2">Businesses</span>
+            We build{" "}
+            <span className="font-semibold font-[FoundersGrotesk] md:pl-2">
+              Businesses
+            </span>
           </h1>
         </div>
       </div>
@@ -51,42 +70,41 @@ export default function Landing() {
             {item}
           </p>
         ))}
-        <a href="/contact">
-          <div className="flex items-center mt-5 md:mt-0">
-            <motion.a
-              href="/contact"
-              className="border-[1px] mr-3 font-thin text-md border-white py-2 px-3 bg-black text-white relative overflow-hidden"
-              initial="rest"
-              whileHover="hover"
-              animate="rest"
+
+        <div className="flex items-center mt-5 md:mt-0">
+          <motion.a
+            href="/contact"
+            className="border-[1px] mr-3 font-thin text-md border-white py-2 px-3 bg-black text-white relative overflow-hidden"
+            initial="rest"
+            whileHover="hover"
+            animate="rest"
+          >
+            <motion.span
+              className="absolute inset-0 bg-white"
+              variants={{
+                rest: { scaleY: 0, originY: 0.5 },
+                hover: { scaleY: 1, originY: 0.5 },
+              }}
+              transition={{ ease: "easeInOut", duration: 1 }}
+              style={{ zIndex: 1 }}
+            />
+            <motion.span
+              className="relative z-10"
+              variants={{
+                rest: { color: "white" },
+                hover: { color: "black" },
+              }}
+              transition={{ ease: "easeInOut", duration: 1 }}
             >
-              <motion.span
-                className="absolute inset-0 bg-white"
-                variants={{
-                  rest: { scaleY: 0, originY: 0.5 },
-                  hover: { scaleY: 1, originY: 0.5 },
-                }}
-                transition={{ ease: "easeInOut", duration: 1 }}
-                style={{ zIndex: 1 }}
-              />
-              <motion.span
-                className="relative z-10"
-                variants={{
-                  rest: { color: "white" },
-                  hover: { color: "black" },
-                }}
-                transition={{ ease: "easeInOut", duration: 1 }}
-              >
-                Start the project
-              </motion.span>
-            </motion.a>
-            <div className="w-9 h-9 flex items-center justify-center border-[1px] border-zinc-500 hover:text-black rounded-full hover:bg-gray-200 transition-colors duration-1000 transform  hover:rotate-45">
-              <span>
-                <FaArrowUpLong />
-              </span>
-            </div>
+              Start the project
+            </motion.span>
+          </motion.a>
+          <div className="w-9 h-9 flex items-center justify-center border-[1px] border-zinc-500 hover:text-black rounded-full hover:bg-gray-200 transition-colors duration-1000 transform  hover:rotate-45">
+            <span>
+              <FaArrowUpLong />
+            </span>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   );

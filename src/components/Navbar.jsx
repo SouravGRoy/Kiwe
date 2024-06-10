@@ -38,13 +38,13 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className={`bg-[#ffffff3b] w-full fixed z-[999] text-white px-6 lg:px-20 py-6 font-['Neue Montreal'] flex justify-between items-center backdrop-blur-sm ${
+      className={`bg-[#ffffff3b] w-full fixed z-[999] text-white px-6 lg:px-20 py-6 font-['NeueMontreal-Regular'] flex justify-between items-center backdrop-blur-sm ${
         visible ? "" : "hidden"
       }`}
     >
       <div className="logo">
         <Link to="/">
-          <h1 className="font-['Neue_Montreal'] font-semibold text-4xl">
+          <h1 className="font-['NeueMontreal-Regular'] font-semibold text-4xl">
             kíwë
           </h1>
         </Link>
@@ -94,7 +94,7 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 0.6 }}
-          className="lg:hidden absolute top-16 font-extrabold font-['impact'] text-3xl text-zinc-900 left-0 right-0 bg-[#ffffffdf] tracking-wide flex flex-col items-center gap-6 py-4"
+          className="lg:hidden absolute top-16 font-extrabold font-['FoundersGrotesk'] text-3xl text-zinc-900 left-0 right-0 bg-[#ffffffdf] tracking-wide flex flex-col items-center gap-6 py-4"
         >
           {links.map((link, index) => (
             <NavLink

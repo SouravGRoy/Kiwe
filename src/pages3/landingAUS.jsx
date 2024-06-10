@@ -33,8 +33,11 @@ export default function LandingAUS() {
           );
         })}
         <div className="masker">
-          <h1 className="uppercase text-5xl md:text-6xl lg:text-8xl  tracking-tighter font-['Founders_Grotesk']">
-            Parent <span className="font-semibold md:pl-2">Company</span>
+          <h1 className="uppercase text-5xl md:text-6xl lg:text-8xl  tracking-tighter font-['FoundersGrotesk']">
+            Parent{" "}
+            <span className="font-semibold font-[FoundersGrotesk] md:pl-2">
+              Company
+            </span>
           </h1>
         </div>
       </div>

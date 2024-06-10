@@ -7,22 +7,24 @@ const cards = [
     content: (
       <div className="flex flex-col">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['Neue_Montreal'] items-start">kíwí</h1>
+          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start tracking-tight">
+            kíwë
+          </h1>
           <div className="flex flex-col items-end">
-            <img src="./SouravCo.jpg" className="w-5/12 rounded-lg " />
+            <img src="./SouravCo.jpg" className="md:w-5/12 w-2/3 rounded-lg " />
             <p className="text-sm font-thin">Co-Founder and CeO</p>
           </div>
         </div>
         <div className="flex flex-row justify-between px-6 md:mt-0 mt-20">
           <div className="flex-col">
-            <h1 className="text-4xl font-bold font-['Founders_Grotesk_X-Condensed']">
+            <h1 className="text-3xl font-bold font-['FoundersGrotesk']">
               Sourob
             </h1>
-            <h1 className="text-5xl font-semibold font-['Founders_Grotesk_X-Condensed']">
+            <h1 className="text-5xl font-semibold font-['FoundersGrotesk']">
               Guha Roy
             </h1>
           </div>
-          <h1 className="text-3xl font-['Neue_Montreal'] pt-10">1/3</h1>
+          <h1 className="md:text-3xl  pt-10">1/3</h1>
         </div>
       </div>
     ),
@@ -32,24 +34,26 @@ const cards = [
     content: (
       <div className="flex flex-col">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['Neue_Montreal'] items-start">kíwí</h1>
+          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start">
+            kíwí
+          </h1>
           <div className="flex flex-col items-end">
-            <img src="./shin.jpg" className="w-5/12 rounded-lg" />
-            <p className="text-sm font-['Neue_Montreal'] font-thin">
+            <img src="./shin.jpg" className="md:w-5/12 w-2/3 rounded-lg" />
+            <p className="text-sm font-['NeueMontreal-Regular'] font-thin">
               Co-Founder and CeO
             </p>
           </div>
         </div>
         <div className="flex flex-row justify-between px-6 md:mt-0 mt-20">
-          <div className="flex-col font-['Neue_Montreal']">
-            <h1 className="text-4xl font-bold font-['Founders_Grotesk_X-Condensed']">
+          <div className="flex-col font-['NeueMontreal-Regular']">
+            <h1 className="text-4xl font-bold font-['FoundersGrotesk']">
               Ankan
             </h1>
-            <h1 className="text-5xl font-semibold font-['Founders_Grotesk_X-Condensed']">
+            <h1 className="text-5xl font-semibold font-['FoundersGrotesk']">
               Ganguly
             </h1>
           </div>
-          <h1 className="text-3xl pt-10">2/3</h1>
+          <h1 className="md:text-3xl pt-10">2/3</h1>
         </div>
       </div>
     ),
@@ -57,24 +61,26 @@ const cards = [
   {
     id: 3,
     content: (
-      <div className="flex flex-col font-['Neue_Montreal']">
+      <div className="flex flex-col font-['NeueMontreal-Regular']">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['Neue_Montreal'] items-start">kíwí</h1>
+          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start">
+            kíwí
+          </h1>
           <div className="flex flex-col items-end">
-            <img src="./SouravCo.jpg" className="w-5/12 rounded-lg" />
+            <img src="./SouravCo.jpg" className="md:w-5/12 w-2/3 rounded-lg" />
             <p className="text-sm font-thin">Co-Founder and CeO</p>
           </div>
         </div>
         <div className="flex flex-row justify-between px-6 md:mt-0 mt-20">
           <div className="flex-col">
-            <h1 className="text-4xl font-bold font-['Founders_Grotesk_X-Condensed']">
+            <h1 className="text-4xl font-bold font-['FoundersGrotesk']">
               Sourob
             </h1>
-            <h1 className="text-5xl font-semibold font-['Founders_Grotesk_X-Condensed']">
+            <h1 className="text-5xl font-semibold font-['FoundersGrotesk']">
               Guha Roy
             </h1>
           </div>
-          <h1 className="text-3xl pt-10">3/3</h1>
+          <h1 className="md:text-3xl pt-10">3/3</h1>
         </div>
       </div>
     ),

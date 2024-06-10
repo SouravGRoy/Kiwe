@@ -6,7 +6,7 @@ export default function CardsIN() {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-speed=".1"
+      data-scroll-speed=".2"
       className="w-full rounded-tl-3xl py-20 mt-16 rounded-tr-3xl bg-[#B3B4BD]"
       // 004D43
     >
@@ -37,7 +37,7 @@ export default function CardsIN() {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <h1 className="text-6xl shadow-md p-1 rounded-md font-['Neue_Montreal']">
+            <h1 className="text-6xl shadow-md p-1 rounded-md font-['NeueMontreal-Regular']">
               kíwí
             </h1>
             <button className="absolute px-3 text-xs rounded-full border-y-2 py-1 left-10 bottom-10 border-gray-500">
@@ -53,7 +53,7 @@ export default function CardsIN() {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <h1 className="text-4xl shadow-md shadow-slate-700 p-1 rounded-md font-['Neue_Montreal']">
+            <h1 className="text-4xl shadow-md shadow-slate-700 p-1 rounded-md font-['NeueMontreal-Regular']">
               LostSpace
             </h1>
             <button className="absolute px-3 text-xs rounded-full border-2 py-1 left-10 bottom-10">
@@ -67,7 +67,7 @@ export default function CardsIN() {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <h1 className="text-5xl shadow-md shadow-slate-700 p-1 rounded-md font-['Neue_Montreal']">
+            <h1 className="text-5xl shadow-md shadow-slate-700 p-1 rounded-md font-['NeueMontreal-Regular']">
               kíwí
             </h1>
             <button className="absolute px-3 text-xs rounded-full border-2 py-1 left-10 bottom-10">
