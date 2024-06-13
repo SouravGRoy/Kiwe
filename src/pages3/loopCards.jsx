@@ -7,7 +7,7 @@ const cards = [
     content: (
       <div className="flex flex-col">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['NeueMontrealRegular'] items-start tracking-tight">
+          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start tracking-tight">
             kíwë
           </h1>
           <div className="flex flex-col items-end">
@@ -35,9 +35,9 @@ const cards = [
   {
     id: 2,
     content: (
-      <div className="flex flex-col font-['NeueMontrealRegular']">
+      <div className="flex flex-col font-['NeueMontreal-Regular']">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['NeueMontrealRegular'] items-start">
+          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start">
             kíwë
           </h1>
           <div className="flex flex-col items-end">
@@ -65,9 +65,9 @@ const cards = [
   {
     id: 3,
     content: (
-      <div className="flex flex-col font-['NeueMontrealRegular']">
+      <div className="flex flex-col font-['NeueMontreal-Regular']">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['NeueMontrealRegular'] items-start">
+          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start">
             kíwë
           </h1>
           <div className="flex flex-col items-end">

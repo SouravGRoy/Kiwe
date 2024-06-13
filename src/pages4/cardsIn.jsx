@@ -37,7 +37,7 @@ export default function CardsIN() {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <h1 className="text-6xl shadow-md p-1 rounded-md font-['NeueMontrealRegular']">
+            <h1 className="text-6xl shadow-md p-1 rounded-md font-['NeueMontreal-Regular']">
               kíwë Media
             </h1>
             <button className="absolute px-3 text-xs rounded-full border-y-2 py-1 left-10 bottom-10 border-gray-500">
@@ -53,7 +53,7 @@ export default function CardsIN() {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <h1 className="text-4xl shadow-md shadow-slate-700 p-1 rounded-md font-['NeueMontrealRegular']">
+            <h1 className="text-4xl shadow-md shadow-slate-700 p-1 rounded-md font-['NeueMontreal-Regular']">
               LostSpace
             </h1>
             <button className="absolute px-3 text-xs rounded-full border-2 py-1 left-10 bottom-10">
@@ -67,7 +67,7 @@ export default function CardsIN() {
               transition: { duration: 0.3, ease: "easeInOut" },
             }}
           >
-            <h1 className="text-5xl shadow-md shadow-slate-700 p-1 rounded-md font-['NeueMontrealRegular']">
+            <h1 className="text-5xl shadow-md shadow-slate-700 p-1 rounded-md font-['NeueMontreal-Regular']">
               kíwë
             </h1>
             <button className="absolute px-3 text-xs rounded-full border-2 py-1 left-10 bottom-10">

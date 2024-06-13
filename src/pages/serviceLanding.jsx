@@ -155,10 +155,10 @@ export default function ServiceLanding() {
         <div className="p-6 md:mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="md:col-span-1">
-              <h2 className="text-lg font-['NeueMontrealRegular']">
+              <h2 className="text-lg font-['NeueMontreal-Regular']">
                 We accomplish this by adhering
               </h2>
-              <p className=" text-lg font-['NeueMontrealRegular']">
+              <p className=" text-lg font-['NeueMontreal-Regular']">
                 to a clear strategy:
               </p>
               <svg width="200" height="100" viewBox="0 0 560 200">

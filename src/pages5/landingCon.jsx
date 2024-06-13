@@ -56,7 +56,7 @@ export default function LandingCon() {
       </div>
 
       <div className="border-t-[1px]  border-zinc-800 md:mt-28 mt-12 md:pb-10 pt-10 md:px-20 px-4 ">
-        <p className="text-md font-thin font-['NeueMontrealRegular'] tracking-tight leading-none ">
+        <p className="text-md font-thin font-['NeueMontreal-Regular'] tracking-tight leading-none ">
           Fill the Form below:
         </p>
         <div className="flex justify-center items-center my-10">
@@ -67,7 +67,7 @@ export default function LandingCon() {
           >
             <div className="flex md:flex-row flex-col">
               <div className="mb-4 flex md:flex-row flex-col md:items-center">
-                <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:pr-2 md:text-5xl text-4xl">
+                <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:pr-2 md:text-5xl text-4xl">
                   Hi! My name is
                 </label>
                 <input
@@ -77,7 +77,7 @@ export default function LandingCon() {
                 />
               </div>
               <div className="mb-4 flex md:flex-row flex-col md:items-center">
-                <label className="md:ml-4 font-['NeueMontrealRegular']  block md:text-5xl text-4xl text-[#112D32]">
+                <label className="md:ml-4 font-['NeueMontreal-Regular']  block md:text-5xl text-4xl text-[#112D32]">
                   and I work with
                 </label>
                 <input
@@ -89,7 +89,7 @@ export default function LandingCon() {
             </div>
 
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
                 I'm looking for a company to help me with
               </label>
               <input
@@ -99,7 +99,7 @@ export default function LandingCon() {
               />
             </div>
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
                 With an idea of having that completed
               </label>
               <input
@@ -112,7 +112,7 @@ export default function LandingCon() {
             </div>
 
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
                 I prefer to work within a budget range of -
               </label>
               <input
@@ -122,7 +122,7 @@ export default function LandingCon() {
               />
             </div>
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
                 You can reach me at
               </label>
               <input
@@ -130,12 +130,12 @@ export default function LandingCon() {
                 placeholder="name@example.com"
                 className="mml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
               />
-              <label className="md:ml-4  block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="md:ml-4  block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
                 to discuss this further.
               </label>
             </div>
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
                 Optionally, I'm sharing more:
               </label>
               <input

@@ -15,7 +15,7 @@ export default function About() {
         ].map((item, index) => (
           <h1
             key={index}
-            className="font-['NeueMontrealRegular'] text-4xl md:text-[3.8vw] md:mb-0 mb-2 leading-8 md:leading-[3.5vw] tracking-tight"
+            className="font-['NeueMontreal-Regular'] text-4xl md:text-[3.8vw] md:mb-0 mb-2 leading-8 md:leading-[3.5vw] tracking-tight"
           >
             {item}
           </h1>
@@ -32,7 +32,7 @@ export default function About() {
 
         <div className="w-full flex flex-col md:flex-row md:mb-10 mt-6 md:mt-16 border-[#000000]">
           <div className="w-full md:w-1/2">
-            <h1 className="md:text-5xl text-4xl font-[NeueMontrealRegular]">
+            <h1 className="md:text-5xl text-4xl font-[NeueMontreal-Regular]">
               Our approach :
             </h1>
             <Link to="/about">
@@ -61,13 +61,13 @@ export default function About() {
               <div className="container mx-auto">
                 <div className="flex flex-wrap w-full mb-4">
                   <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h1 className="font-['NeueMontrealRegular'] text-lg font-semibold title-font mb-2 text-gray-900">
+                    <h1 className="font-['NeueMontreal-Regular'] text-lg font-semibold title-font mb-2 text-gray-900">
                       Who are We?
                     </h1>
                     <div className="h-1 w-20 bg-indigo-500 rounded"></div>
                   </div>
                   <div className="lg:w-1/2 w-full flex flex-col">
-                    <p className="leading-relaxed text-lg mb-4 font-['NeueMontrealRegular'] font-bold text-gray-800">
+                    <p className="leading-relaxed text-lg mb-4 font-['NeueMontreal-Regular'] font-bold text-gray-800">
                       We are the Co-Founders of kíwë -
                     </p>
                     <p className="md:mb-8 mb-4 font-light text-gray-100">

@@ -44,7 +44,7 @@ export default function Navbar() {
     >
       <div className="logo">
         <Link to="/">
-          <h1 className="font-['NeueMontrealRegular'] font-semibold text-4xl">
+          <h1 className="font-['NeueMontreal-Regular'] font-semibold text-4xl">
             kíwë
           </h1>
         </Link>

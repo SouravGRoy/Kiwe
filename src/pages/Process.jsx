@@ -47,7 +47,7 @@ const Accordion = ({
                   className="w-24 rounded-lg h-24 my-6"
                 />
                 <div className="flex-1 w-2/3 mb-4">
-                  <p className="font-['NeueMontrealRegular']">{content}</p>
+                  <p className="font-['NeueMontreal-Regular']">{content}</p>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Process() {
 
   return (
     <div className="max-w-auto mt-4 ">
-      <h1 className="md:text-5xl text-lg px-8  font-['NeueMontrealRegular']">
+      <h1 className="md:text-5xl text-lg px-8  font-['NeueMontreal-Regular']">
         Comprehensive approach
       </h1>
       <div className="mt-8 shadow-md rounded-md">

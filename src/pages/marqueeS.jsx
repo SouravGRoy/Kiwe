@@ -72,7 +72,7 @@ export default function MarqueeService() {
       </div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-14 sm:px-6 sm:py-20 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
-          <h2 className="text-3xl font-['NeueMontrealRegular'] tracking-tight text-gray-900 sm:text-xl">
+          <h2 className="text-3xl font-['NeueMontreal-Regular'] tracking-tight text-gray-900 sm:text-xl">
             What you can expect ?
           </h2>
           <p className="mt-4 text-gray-500">
@@ -99,20 +99,20 @@ export default function MarqueeService() {
               className="rounded-lg flex flex-col justify-between bg-[#fafaf0] text-black"
             >
               <div>
-                <h1 className="text-5xl font-['NeueMontrealRegular'] text-gray-500 p-6">
+                <h1 className="text-5xl font-['NeueMontreal-Regular'] text-gray-500 p-6">
                   {String(index + 1).padStart(2, "0")}
                 </h1>
               </div>
               <div className="flex justify-between p-6 flex-row">
                 <div>
-                  <p className="text-lg font-['NeueMontrealRegular'] underline text-gray-500">
+                  <p className="text-lg font-['NeueMontreal-Regular'] underline text-gray-500">
                     {service.title}
                   </p>
                 </div>
                 <div>
                   <Link
                     to="/about"
-                    className="text-lg font-['NeueMontrealRegular'] underline text-gray-500 cursor-pointer"
+                    className="text-lg font-['NeueMontreal-Regular'] underline text-gray-500 cursor-pointer"
                   >
                     Read
                   </Link>
