@@ -1,4 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 import React from "react";
 
 export default function Featured() {
@@ -15,7 +16,7 @@ export default function Featured() {
   return (
     <div className="w-full py-12 md:py-20">
       <div className="w-full border-b-[1px] border-zinc-700 pb-10 px-10 md:px-20">
-        <h1 className="text-4xl md:text-6xl font-['NeueMontreal-Regular'] tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-['NeueMontrealRegular'] tracking-tight">
           Featured Work
         </h1>
       </div>
@@ -42,16 +43,24 @@ export default function Featured() {
             <div className="card w-full h-full overflow-hidden rounded-lg md:max-w-[100%] lg:max-w-[100%] md:max-h-[40%] lg:max-h-[100%]">
               <div className="flex flex-row gap-2 mb-3">
                 <div className="w-2 h-2 mt-2 bg-zinc-100 rounded-full"></div>
-                <p className="font-['NeueMontreal-Regular'] uppercase">
+                <p className="font-['NeueMontrealRegular'] uppercase">
                   Urban Escape
                 </p>
               </div>
-              <img className="w-full h-full bg-cover" src="./UE.jpg" alt="" />
+              <Link to="/work">
+                {" "}
+                <img
+                  className="w-full h-full bg-cover"
+                  loading="lazy"
+                  src="./UE.jpg"
+                  alt=""
+                />
+              </Link>
             </div>
             <div className="flex mt-3 flex-wrap gap-3">
               {["Vacation Rental Site", "Dashboard", " Login/SignUp"].map(
                 (item, index) => (
-                  <motion.a
+                  <motion.div
                     key={index}
                     href="/work"
                     className="border-[1px] font-thin border-white py-1 px-2 rounded-full bg-black text-white relative overflow-hidden"
@@ -78,7 +87,7 @@ export default function Featured() {
                     >
                       {item}
                     </motion.span>
-                  </motion.a>
+                  </motion.div>
                 )
               )}
             </div>
@@ -107,20 +116,24 @@ export default function Featured() {
               </h1>
               <div className="flex flex-row gap-2 mb-3">
                 <div className="w-2 h-2 mt-2 bg-zinc-100 rounded-full"></div>
-                <p className="font-['NeueMontreal-Regular'] uppercase">
+                <p className="font-['NeueMontrealRegular'] uppercase">
                   Job Hub
                 </p>
               </div>
-              <img
-                className="w-full h-full bg-cover border-red-100 border-[1px]"
-                src="./JHUB.png"
-                alt=""
-              />
+              <Link to="/work">
+                {" "}
+                <img
+                  className="w-full h-full bg-cover border-red-100 border-[1px]"
+                  loading="lazy"
+                  src="./JHUB.webp"
+                  alt=""
+                />
+              </Link>
             </div>
             <div className="flex mt-3 flex-wrap gap-3">
               {["Job Portal", " Optimized Filtering", "Slick Design"].map(
                 (item, index) => (
-                  <motion.a
+                  <motion.div
                     key={index}
                     href="/work"
                     className="border-[1px] font-thin border-white py-1 px-2 rounded-full bg-black text-white relative overflow-hidden"
@@ -147,7 +160,7 @@ export default function Featured() {
                     >
                       {item}
                     </motion.span>
-                  </motion.a>
+                  </motion.div>
                 )
               )}
             </div>

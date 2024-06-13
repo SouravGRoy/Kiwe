@@ -74,7 +74,7 @@ export default function ServiceLanding() {
           />
         </div>
 
-        <div className="mt-1 mb-2 md:block hidden">
+        <div className="mt-4 mb-2 md:block hidden">
           <motion.div
             className="underline-animation"
             style={{
@@ -155,10 +155,10 @@ export default function ServiceLanding() {
         <div className="p-6 md:mt-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="md:col-span-1">
-              <h2 className="text-lg font-['NeueMontreal-Regular']">
+              <h2 className="text-lg font-['NeueMontrealRegular']">
                 We accomplish this by adhering
               </h2>
-              <p className=" text-lg font-['NeueMontreal-Regular']">
+              <p className=" text-lg font-['NeueMontrealRegular']">
                 to a clear strategy:
               </p>
               <svg width="200" height="100" viewBox="0 0 560 200">

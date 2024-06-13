@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 export default function Eyes() {
   const [rotate, setRotate] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -19,8 +20,18 @@ export default function Eyes() {
 
     window.addEventListener("mousemove", handleMouseMove);
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Initial check
+    handleResize();
+
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -30,15 +41,22 @@ export default function Eyes() {
 
   return (
     <div
-      className="eyes w-full h-screen overflow-hidden"
+      className="eyes w-full h-screen overflow-hidden relative group"
       onClick={handleToggleVideo}
     >
       {showVideo ? (
         <div className="w-full h-full flex items-center justify-center bg-black">
-          <video className="w-full h-full object-cover" autoPlay loop>
-            <source src="./promo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          {isMobile ? (
+            <video className="w-full h-full object-cover" autoPlay loop>
+              <source src="./MobilePromox.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <video className="w-full h-full object-cover" autoPlay loop>
+              <source src="./promo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          )}
         </div>
       ) : (
         <div
@@ -71,6 +89,10 @@ export default function Eyes() {
                 </div>
               </div>
             </div>
+          </div>
+          {/* Tooltip */}
+          <div className="tooltip absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-sm bg-[#ffc0cb7a] px-2 py-1 rounded-md transform md:transition duration-300 ease-in-out md:opacity-0 md:scale-90 md:group-hover:opacity-100 md:group-hover:scale-110">
+            Click
           </div>
         </div>
       )}

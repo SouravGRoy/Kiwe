@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function MediaUs() {
   return (
@@ -23,14 +24,14 @@ export default function MediaUs() {
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                           <img
-                            src="./media1.jpg"
+                            src="./media1.webp"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
-                            src="./media2.jpg"
+                            src="./media2.webp"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
@@ -39,21 +40,21 @@ export default function MediaUs() {
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
-                            src="./media4.jpg"
+                            src="./media4.webp"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div className="md:h-64 md:w-44 w-36 h-52 overflow-hidden rounded-lg">
                           <img
-                            src="./media7.jpg"
+                            src="./media7.webp"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
-                            src="./media5.jpg"
+                            src="./media5.webp"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
@@ -62,14 +63,14 @@ export default function MediaUs() {
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
-                            src="./media6.jpg"
+                            src="./media6.webp"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
-                            src="./media8.jpg"
+                            src="./media8.webp"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
@@ -78,11 +79,10 @@ export default function MediaUs() {
                     </div>
                   </div>
                 </div>
-                <div className="flex mt-3  gap-3">
+                <Link to="/contact" className="flex mt-3  gap-3">
                   {["Contact Us", "⏎"].map((item, index) => (
-                    <motion.a
+                    <motion.div
                       key={index}
-                      href="/contact"
                       className="border-[1px] font-thin border-white py-2 px-3 rounded-full bg-black text-white relative overflow-hidden"
                       initial="rest"
                       whileHover="hover"
@@ -107,9 +107,9 @@ export default function MediaUs() {
                       >
                         {item}
                       </motion.span>
-                    </motion.a>
+                    </motion.div>
                   ))}
-                </div>
+                </Link>
               </div>
             </div>
           </div>

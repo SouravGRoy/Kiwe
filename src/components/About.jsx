@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function About() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div>
-      <div className="relative w-full md:py-28 p-14 bg-[#8cbcd3] rounded-tl-3xl rounded-tr-3xl text-[#000]">
+      <div className="relative w-full md:py-28 p-14 bg-[#8cbcd3] md:rounded-tl-3xl md:rounded-tr-3xl text-[#000]">
         {[
           "kíwë is a strategic partner for fast-grow­ing tech ",
           "businesses that need to raise funds, sell prod­ucts,",
@@ -14,7 +15,7 @@ export default function About() {
         ].map((item, index) => (
           <h1
             key={index}
-            className="font-['NeueMontreal-Regular'] text-4xl md:text-[3.8vw] leading-8 md:leading-[3.5vw] tracking-tight"
+            className="font-['NeueMontrealRegular'] text-4xl md:text-[3.8vw] md:mb-0 mb-2 leading-8 md:leading-[3.5vw] tracking-tight"
           >
             {item}
           </h1>
@@ -31,10 +32,10 @@ export default function About() {
 
         <div className="w-full flex flex-col md:flex-row md:mb-10 mt-6 md:mt-16 border-[#000000]">
           <div className="w-full md:w-1/2">
-            <h1 className="md:text-5xl text-4xl font-[NeueMontreal-Regular]">
+            <h1 className="md:text-5xl text-4xl font-[NeueMontrealRegular]">
               Our approach :
             </h1>
-            <a href="/about">
+            <Link to="/about">
               <button
                 className="flex gap-5 items-center md:px-5 px-3 py-2 md:py-3 mb-4 bg-zinc-900 mt-8 rounded-full uppercase text-white"
                 onMouseEnter={() => setIsHovered(true)}
@@ -50,23 +51,23 @@ export default function About() {
                   transition={{ duration: 0.3 }}
                 >
                   {isHovered && (
-                    <FaArrowUpLong className="text-zinc-900 rotate-45  my-1 mx-1 mb-2" />
+                    <FaArrowUpLong className="text-zinc-900 rotate-45 my-1 mx-1 mb-2" />
                   )}
                 </motion.div>
               </button>
-            </a>
+            </Link>
 
             <div className="text-gray-600 body-font">
-              <div className="container  mx-auto">
+              <div className="container mx-auto">
                 <div className="flex flex-wrap w-full mb-4">
                   <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-                    <h1 className="font-['NeueMontreal-Regular'] text-lg font-semibold title-font mb-2 text-gray-900">
+                    <h1 className="font-['NeueMontrealRegular'] text-lg font-semibold title-font mb-2 text-gray-900">
                       Who are We?
                     </h1>
                     <div className="h-1 w-20 bg-indigo-500 rounded"></div>
                   </div>
                   <div className="lg:w-1/2 w-full flex flex-col">
-                    <p className="leading-relaxed text-lg mb-4 font-['NeueMontreal-Regular'] font-bold text-gray-800">
+                    <p className="leading-relaxed text-lg mb-4 font-['NeueMontrealRegular'] font-bold text-gray-800">
                       We are the Co-Founders of kíwë -
                     </p>
                     <p className="md:mb-8 mb-4 font-light text-gray-100">
@@ -86,7 +87,11 @@ export default function About() {
           </div>
 
           <div className="w-full md:w-1/2 shadow-lg md:max-w-[70%] lg:max-w-[100%] md:h-max-[50%] lg:max-h-[100%] flex justify-end rounded-3xl overflow-hidden md:mt-0">
-            <img src="/FoundersOG.jpg" className="h-auto w-full  rounded-lg" />
+            <img
+              src="/FoundersOG.jpg"
+              loading="lazy"
+              className="h-auto w-full rounded-lg"
+            />
           </div>
         </div>
       </div>

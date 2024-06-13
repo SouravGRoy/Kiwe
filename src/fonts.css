@@ -27,7 +27,7 @@
     font-style: normal;
   }
   @font-face {
-    font-family: 'FoundersGrotesk';
+    font-family: 'FoundersGrotesk-Regular';
     src: url('../fonts/FoundersGrotesk-Regular.woff2') format('woff2');
         
     font-weight: normal;
@@ -41,14 +41,14 @@
     font-style: normal;
   }
   @font-face {
-    font-family: 'Founders Grotesk X-Condensed';
+    font-family: 'FoundersGroteskX-Condensed';
     src: url('../fonts/FoundersGroteskXCond-Bold.woff2') format('woff2');
         
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family: 'NeueMontreal-Regular';
+    font-family: 'NeueMontrealRegular';
     src: url('./fonts/NeueMontreal-Regular.woff2') format('woff2');
         
     font-weight: normal;

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -56,7 +57,7 @@ export default function MarqueeService() {
           initial={{ x: "0" }}
           animate={{ x: "-100%" }}
           transition={{ repeat: Infinity, ease: "linear", duration: 10 }}
-          className="text-[28vw] pt-10 -mb-[7vw]  font-semibold uppercase leading-none font-['Founders_Grotesk_X-Condensed'] pr-20"
+          className="text-[28vw] pt-10 -mb-[7vw]  font-semibold uppercase leading-none font-['FoundersGroteskX-Condensed'] pr-20"
         >
           We're not here to take part, we're here to take over.
         </motion.h1>
@@ -64,14 +65,14 @@ export default function MarqueeService() {
           initial={{ x: "0" }}
           animate={{ x: "-100%" }}
           transition={{ repeat: Infinity, ease: "linear", duration: 10 }}
-          className="text-[28vw] pt-10 -mb-[7vw] font-semibold uppercase leading-none font-['Founders_Grotesk_X-Condensed'] pr-20"
+          className="text-[28vw] pt-10 -mb-[7vw] font-semibold uppercase leading-none font-['FoundersGroteskX-Condensed'] pr-20"
         >
           We're not here to take part, we're here to take over.
         </motion.h1>
       </div>
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-14 sm:px-6 sm:py-20 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
-          <h2 className="text-3xl font-['Neue_Montreal'] tracking-tight text-gray-900 sm:text-xl">
+          <h2 className="text-3xl font-['NeueMontrealRegular'] tracking-tight text-gray-900 sm:text-xl">
             What you can expect ?
           </h2>
           <p className="mt-4 text-gray-500">
@@ -98,29 +99,29 @@ export default function MarqueeService() {
               className="rounded-lg flex flex-col justify-between bg-[#fafaf0] text-black"
             >
               <div>
-                <h1 className="text-5xl font-['Neue_Montreal'] text-gray-500 p-6">
+                <h1 className="text-5xl font-['NeueMontrealRegular'] text-gray-500 p-6">
                   {String(index + 1).padStart(2, "0")}
                 </h1>
               </div>
               <div className="flex justify-between p-6 flex-row">
                 <div>
-                  <p className="text-lg font-['Neue_Montreal'] underline text-gray-500">
+                  <p className="text-lg font-['NeueMontrealRegular'] underline text-gray-500">
                     {service.title}
                   </p>
                 </div>
                 <div>
-                  <a
-                    href="/about"
-                    className="text-lg font-['Neue_Montreal'] underline text-gray-500 cursor-pointer"
+                  <Link
+                    to="/about"
+                    className="text-lg font-['NeueMontrealRegular'] underline text-gray-500 cursor-pointer"
                   >
                     Read
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
           <img
-            src="/shin1.png"
+            src="/shin1.webp"
             alt="Walnut card tray filled with cards and card angled in dedicated groove."
             className="rounded-lg bg-gray-100"
           />

@@ -30,14 +30,17 @@ export default function LandingCon() {
                 {index === 1 && (
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: width <= 768 ? "16vw" : "14vw" }}
+                    animate={{ width: width <= 768 ? "22vw" : "14vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.5 }}
                     className="w-12 md:w-[6vw] relative md:h-[5.5vw] h-9 overflow-hidden"
                   >
-                    <img src="/startK.png" className="rounded-md h-full " />
+                    <img
+                      src="/startK.webp"
+                      className="rounded-md h-full md:mt-0 mt-1"
+                    />
                   </motion.div>
                 )}
-                <h1 className="uppercase text-4xl md:text-5xl lg:text-7xl md:leading-[4.5vw] tracking-tighter font-['Founders_Grotesk'] ">
+                <h1 className="uppercase text-4xl md:text-5xl lg:text-7xl md:leading-[4.5vw] tracking-tight font-['FoundersGrotesk-Regular'] ">
                   {item}
                 </h1>
               </div>
@@ -45,7 +48,7 @@ export default function LandingCon() {
           );
         })}
         <div className="masker">
-          <h1 className="uppercase text-5xl md:text-6xl lg:text-8xl  tracking-tighter font-['FoundersGrotesk']">
+          <h1 className="uppercase text-5xl md:text-6xl lg:text-8xl  tracking-tight font-['FoundersGrotesk']">
             GET
             <span className="font-semibold  pl-3">Started</span>
           </h1>
@@ -53,18 +56,18 @@ export default function LandingCon() {
       </div>
 
       <div className="border-t-[1px]  border-zinc-800 md:mt-28 mt-12 md:pb-10 pt-10 md:px-20 px-4 ">
-        <p className="text-md font-thin font-['NeueMontreal-Regular'] tracking-tight leading-none ">
+        <p className="text-md font-thin font-['NeueMontrealRegular'] tracking-tight leading-none ">
           Fill the Form below:
         </p>
         <div className="flex justify-center items-center my-10">
           <form
-            action="https://formsubmit.co/professorredpill7@gmail.com"
+            action="https://www.actionforms.io/e/r/kiwe"
             method="POST"
             className="w-full p-8 rounded-lg"
           >
             <div className="flex md:flex-row flex-col">
               <div className="mb-4 flex md:flex-row flex-col md:items-center">
-                <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:pr-2 md:text-5xl text-4xl">
+                <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:pr-2 md:text-5xl text-4xl">
                   Hi! My name is
                 </label>
                 <input
@@ -74,7 +77,7 @@ export default function LandingCon() {
                 />
               </div>
               <div className="mb-4 flex md:flex-row flex-col md:items-center">
-                <label className="md:ml-4 font-['NeueMontreal-Regular']  block md:text-5xl text-4xl text-[#112D32]">
+                <label className="md:ml-4 font-['NeueMontrealRegular']  block md:text-5xl text-4xl text-[#112D32]">
                   and I work with
                 </label>
                 <input
@@ -86,7 +89,7 @@ export default function LandingCon() {
             </div>
 
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
                 I'm looking for a company to help me with
               </label>
               <input
@@ -96,16 +99,20 @@ export default function LandingCon() {
               />
             </div>
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
                 With an idea of having that completed
               </label>
               <input
-                type="date"
-                className="ml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
+                type="text"
+                className="ml-2 flex-grow bg-transparent border-b-2 border-white py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
+                placeholder="YYYY-MM-DD"
+                onFocus={(e) => (e.target.type = "date")}
+                onBlur={(e) => (e.target.type = "text")}
               />
             </div>
+
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
                 I prefer to work within a budget range of -
               </label>
               <input
@@ -115,7 +122,7 @@ export default function LandingCon() {
               />
             </div>
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
                 You can reach me at
               </label>
               <input
@@ -123,12 +130,12 @@ export default function LandingCon() {
                 placeholder="name@example.com"
                 className="mml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
               />
-              <label className="md:ml-4  block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="md:ml-4  block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
                 to discuss this further.
               </label>
             </div>
             <div className="mb-4 flex md:flex-row flex-col md:items-center">
-              <label className="block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
+              <label className="block font-['NeueMontrealRegular'] text-[#112D32] md:text-5xl text-4xl">
                 Optionally, I'm sharing more:
               </label>
               <input

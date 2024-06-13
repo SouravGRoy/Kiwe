@@ -7,11 +7,14 @@ const cards = [
     content: (
       <div className="flex flex-col">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start tracking-tight">
+          <h1 className="text-4xl font-['NeueMontrealRegular'] items-start tracking-tight">
             kíwë
           </h1>
           <div className="flex flex-col items-end">
-            <img src="./SouravCo.jpg" className="md:w-5/12 w-2/3 rounded-lg " />
+            <img
+              src="./SouravCo.webp"
+              className="md:w-5/12 w-2/3 rounded-lg "
+            />
             <p className="text-sm font-thin">Co-Founder and CeO</p>
           </div>
         </div>
@@ -32,20 +35,21 @@ const cards = [
   {
     id: 2,
     content: (
-      <div className="flex flex-col">
+      <div className="flex flex-col font-['NeueMontrealRegular']">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start">
-            kíwí
+          <h1 className="text-4xl font-['NeueMontrealRegular'] items-start">
+            kíwë
           </h1>
           <div className="flex flex-col items-end">
-            <img src="./shin.jpg" className="md:w-5/12 w-2/3 rounded-lg" />
-            <p className="text-sm font-['NeueMontreal-Regular'] font-thin">
-              Co-Founder and CeO
-            </p>
+            <img
+              src="./Co-Founder.png"
+              className="md:w-1/4 w-1/2  rounded-lg"
+            />
+            <p className="text-sm font-thin">Co-Founder</p>
           </div>
         </div>
         <div className="flex flex-row justify-between px-6 md:mt-0 mt-20">
-          <div className="flex-col font-['NeueMontreal-Regular']">
+          <div className="flex-col">
             <h1 className="text-4xl font-bold font-['FoundersGrotesk']">
               Ankan
             </h1>
@@ -61,23 +65,26 @@ const cards = [
   {
     id: 3,
     content: (
-      <div className="flex flex-col font-['NeueMontreal-Regular']">
+      <div className="flex flex-col font-['NeueMontrealRegular']">
         <div className="flex flex-row md:px-6 px-2 pt-4">
-          <h1 className="text-4xl font-['NeueMontreal-Regular'] items-start">
-            kíwí
+          <h1 className="text-4xl font-['NeueMontrealRegular'] items-start">
+            kíwë
           </h1>
           <div className="flex flex-col items-end">
-            <img src="./SouravCo.jpg" className="md:w-5/12 w-2/3 rounded-lg" />
-            <p className="text-sm font-thin">Co-Founder and CeO</p>
+            <img
+              src="./MarketingTeam.webp"
+              className="md:w-1/4 w-1/2 rounded-lg"
+            />
+            <p className="text-sm font-thin">Sales and Marketing</p>
           </div>
         </div>
         <div className="flex flex-row justify-between px-6 md:mt-0 mt-20">
           <div className="flex-col">
             <h1 className="text-4xl font-bold font-['FoundersGrotesk']">
-              Sourob
+              xxxxx
             </h1>
             <h1 className="text-5xl font-semibold font-['FoundersGrotesk']">
-              Guha Roy
+              xxxxxxxx
             </h1>
           </div>
           <h1 className="md:text-3xl pt-10">3/3</h1>

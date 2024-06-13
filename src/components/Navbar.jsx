@@ -38,13 +38,13 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className={`bg-[#ffffff3b] w-full fixed z-[999] text-white px-6 lg:px-20 py-6 font-['NeueMontreal-Regular'] flex justify-between items-center backdrop-blur-sm ${
+      className={`bg-[#ffffff3b] w-full fixed z-[999] text-white px-6 lg:px-20 py-6 font-['NeueMontrealRegular'] flex justify-between items-center backdrop-blur-sm ${
         visible ? "" : "hidden"
       }`}
     >
       <div className="logo">
         <Link to="/">
-          <h1 className="font-['NeueMontreal-Regular'] font-semibold text-4xl">
+          <h1 className="font-['NeueMontrealRegular'] font-semibold text-4xl">
             kíwë
           </h1>
         </Link>

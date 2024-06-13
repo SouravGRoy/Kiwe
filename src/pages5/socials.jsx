@@ -38,7 +38,7 @@ export default function Socials() {
         {["INSTAGRAM", "TWITTER", "FACEBOOK", "LINKEDIN"].map((text, index) => (
           <motion.a
             key={index}
-            className="text-[15vw] font-['Founders_Grotesk_X-Condensed'] leading-[7vw] md:leading-[9vw]  font-semibold text-black"
+            className="text-[15vw] font-['FoundersGroteskX-Condensed'] leading-[7vw] md:leading-[9vw]  font-semibold text-black"
             whileHover={{
               scale: [1, 1.3, 1],
               rotate: [0, 360, 0],

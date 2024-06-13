@@ -4,40 +4,45 @@ const data = [
   {
     title: "RAISE FUNDS:",
     items: [
-      { name: "INVESTOR DECK", link: "#", special: true, image: "/clouds.png" },
+      {
+        name: "INVESTOR DECK",
+        link: "#",
+        special: true,
+        image: "/InvestorDeck.png",
+      },
       { name: "STARTUP PITCH", link: "#" },
     ],
   },
   {
     title: "SELL PRODUCTS:",
     items: [
-      { name: "BUSINESS PROPOSAL", link: "#", image: "/cloud1.png" },
+      { name: "BUSINESS PROPOSAL", link: "#", image: "/BusinessProposal.webp" },
       { name: "COMPANY PRESENTATION", link: "#" },
       { name: "PRODUCT PRESENTATION", link: "#" },
-      { name: "SALES DECK", link: "#", image: "/cloud2.png" },
+      { name: "SALES DECK", link: "#", image: "/ServiceDeck.webp" },
       { name: "SERVICE DECK", link: "#" },
     ],
   },
   {
     title: "HIRE & MANAGE PEOPLE:",
     items: [
-      { name: "BIG NEWS ", link: "#", image: "/cloud3.png" },
+      { name: "BIG NEWS ", link: "#", image: "/News.webp" },
       { name: "BRANDED ", link: "#" },
-      { name: "ONBOARDING ", link: "#", image: "/eyes1.png" },
+      { name: "ONBOARDING ", link: "#", image: "/Onboarding.webp" },
       { name: "POLICY DECK", link: "#" },
-      { name: "PROGRESS ", link: "#", image: "/eyes2.png" },
+      { name: "PROGRESS ", link: "#", image: "/Progress.webp" },
     ],
   },
   {
     title: "ADDITIONAL:",
     items: [
-      { name: "AGENCY", link: "#", image: "/shin.jpg" },
+      { name: "AGENCY", link: "#", image: "/Agency.webp" },
       { name: "BRANDING", link: "#" },
       {
         name: "CORPORATE ",
         link: "#",
         special: true,
-        image: "Founders.jpg",
+        image: "/Corporate.webp",
       },
       { name: "REDESIGN", link: "#" },
       { name: "REVIEW", link: "#" },
@@ -60,7 +65,7 @@ export default function AboutS() {
         ].map((item, index) => (
           <h1
             key={index}
-            className="font-['NeueMontreal-Regular'] text-2xl md:text-[3.8vw] leading-6 md:leading-[3.7vw] tracking-tight"
+            className="font-['NeueMontrealRegular'] text-2xl md:text-[3.8vw] leading-6 md:leading-[3.7vw] tracking-tight"
           >
             {item}
           </h1>
@@ -73,7 +78,7 @@ export default function AboutS() {
         <div className="container mx-auto p-4">
           <div className="grid grid-cols-1 md:grid-cols-4 mt-6 gap-4">
             <div>
-              <h2 className="text-md font-['NeueMontreal-Regular'] mb-4">
+              <h2 className="text-md font-['NeueMontrealRegular'] mb-4">
                 Our Capabilities:
               </h2>
             </div>
@@ -97,7 +102,7 @@ export default function AboutS() {
               <div key={index}>
                 <div className="flex flex-row gap-2 mb-3">
                   <div className="w-2 h-2 mt-2 bg-zinc-900 rounded-full"></div>
-                  <h3 className="font-['NeueMontreal-Regular'] font-thin text-md mb-2">
+                  <h3 className="font-['NeueMontrealRegular'] font-thin text-md mb-2">
                     {category.title}
                   </h3>
                 </div>
@@ -126,7 +131,7 @@ export default function AboutS() {
                 <div key={index}>
                   <div className="flex gap-2 mb-3">
                     <div className="w-2 h-2 mt-2 bg-zinc-900 rounded-full"></div>
-                    <h3 className="font-['NeueMontreal-Regular'] font-thin text-md mb-2">
+                    <h3 className="font-['NeueMontrealRegular'] font-thin text-md mb-2">
                       {category.title}
                     </h3>
                   </div>

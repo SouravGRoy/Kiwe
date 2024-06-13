@@ -47,7 +47,7 @@ const Accordion = ({
                   className="w-24 rounded-lg h-24 my-6"
                 />
                 <div className="flex-1 w-2/3 mb-4">
-                  <p className="font-['NeueMontreal-Regular']">{content}</p>
+                  <p className="font-['NeueMontrealRegular']">{content}</p>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function Process() {
       phase: "Recognizing",
       content:
         "We define your goals, get to know your audience, and understand the context. Through a process of exploration, investigation, and research, we seek the insights that inform our future decisions.",
-      imageUrl: "/cloud1.png",
+      imageUrl: "/Stage1.webp",
     },
     {
       id: 2,
@@ -76,7 +76,7 @@ export default function Process() {
       phase: "Narration",
       content:
         "Based on the answers, previous drafts, and additional research, we will develop a foundation of the deck — the structure of the presentation. We build a tone of voice, flow, and narrative to engage our audience. Here we will win people's minds.",
-      imageUrl: "/eyes4.png",
+      imageUrl: "/Stage2.webp",
     },
     {
       id: 3,
@@ -84,7 +84,7 @@ export default function Process() {
       phase: "Design",
       content:
         "We use design to guide our audience's attention and keep them engaged. It's not only what you want them to do, but also how you make them feel. We make sure the presentation wins people's hearts and leaves a perfect long-lasting impression.",
-      imageUrl: "/shin.jpg",
+      imageUrl: "/Stage3.webp",
     },
     {
       id: 4,
@@ -92,7 +92,7 @@ export default function Process() {
       phase: "Feedback",
       content:
         "We want to stay on the same page. Hence, each phase wraps up presenting the work to you to collect and implement your feedback if such appears.",
-      imageUrl: "Founders.jpg",
+      imageUrl: "Stage4.webp",
     },
     {
       id: 5,
@@ -100,13 +100,13 @@ export default function Process() {
       phase: "Delivery",
       content:
         "We will carefully collect and prepare all the project files to ensure smooth future use.",
-      imageUrl: "/clouds.png",
+      imageUrl: "Stage5.webp",
     },
   ];
 
   return (
     <div className="max-w-auto mt-4 ">
-      <h1 className="md:text-5xl text-lg px-8  font-['NeueMontreal-Regular']">
+      <h1 className="md:text-5xl text-lg px-8  font-['NeueMontrealRegular']">
         Comprehensive approach
       </h1>
       <div className="mt-8 shadow-md rounded-md">

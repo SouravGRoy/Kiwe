@@ -7,7 +7,7 @@ export default function Marquee() {
       data-scroll
       data-scroll-section
       data-scroll-speed=".2"
-      className="w-full rounded-tl-3xl py-20  rounded-tr-3xl bg-[#B3B4BD]"
+      className="w-full md:rounded-tl-3xl py-20  md:rounded-tr-3xl bg-[#B3B4BD]"
       // 004D43
     >
       <div className="text border-t-2 border-b-2 overflow-hidden whitespace-nowrap flex border-zinc-300">
@@ -15,7 +15,7 @@ export default function Marquee() {
           initial={{ x: "0" }}
           animate={{ x: "-100%" }}
           transition={{ repeat: Infinity, ease: "linear", duration: 10 }}
-          className="text-[24vw] pt-10 -mb-[10vw]  font-semibold uppercase leading-none font-['Founders_Grotesk_X-Condensed'] pr-20"
+          className="text-[24vw] pt-10 -mb-[10vw]  font-semibold uppercase leading-none font-['FoundersGroteskX-Condensed'] pr-20"
         >
           EAT SLEEP CONQUER REPEAT
         </motion.h1>
@@ -23,7 +23,7 @@ export default function Marquee() {
           initial={{ x: "0" }}
           animate={{ x: "-100%" }}
           transition={{ repeat: Infinity, ease: "linear", duration: 10 }}
-          className="text-[24vw] pt-10 -mb-[10vw] font-semibold uppercase leading-none font-['Founders_Grotesk_X-Condensed'] pr-20"
+          className="text-[24vw] pt-10 -mb-[10vw] font-semibold uppercase leading-none font-['FoundersGroteskX-Condensed'] pr-20"
         >
           EAT SLEEP CONQUER REPEAT
         </motion.h1>

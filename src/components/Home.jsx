@@ -7,6 +7,7 @@ import Eyes from "./Eyes";
 import Featured from "./Featured";
 import Cards from "./Cards";
 import Footer from "./Footer";
+import OrginAnimation from "./Origin";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Eyes />
       <Featured />
       <Cards />
+      <OrginAnimation />
       <Footer />
     </div>
   );
