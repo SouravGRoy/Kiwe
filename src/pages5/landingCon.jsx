@@ -72,6 +72,7 @@ export default function LandingCon() {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Enter your name*"
                   className="ml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center "
                 />
@@ -82,6 +83,7 @@ export default function LandingCon() {
                 </label>
                 <input
                   type="text"
+                  name="company"
                   placeholder="Company name *"
                   className="ml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center "
                 />
@@ -94,6 +96,7 @@ export default function LandingCon() {
               </label>
               <input
                 type="text"
+                name="goal"
                 placeholder="Your goal type here*"
                 className="ml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
               />
@@ -104,6 +107,7 @@ export default function LandingCon() {
               </label>
               <input
                 type="text"
+                name="completion_date"
                 className="ml-2 flex-grow bg-transparent border-b-2 border-white py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
                 placeholder="YYYY-MM-DD"
                 onFocus={(e) => (e.target.type = "date")}
@@ -117,6 +121,7 @@ export default function LandingCon() {
               </label>
               <input
                 type="text"
+                name="budget"
                 placeholder="Select*"
                 className="ml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
               />
@@ -127,8 +132,9 @@ export default function LandingCon() {
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="name@example.com"
-                className="mml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
+                className="ml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
               />
               <label className="md:ml-4  block font-['NeueMontreal-Regular'] text-[#112D32] md:text-5xl text-4xl">
                 to discuss this further.
@@ -140,6 +146,7 @@ export default function LandingCon() {
               </label>
               <input
                 type="text"
+                name="details"
                 placeholder="Product details type here..."
                 className="ml-2 flex-grow bg-transparent border-b-2 border-white  py-2 text-white leading-tight placeholder:text-[#DEF2F1] focus:outline-none focus:border-white text-center"
               />
