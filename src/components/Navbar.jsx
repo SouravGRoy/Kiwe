@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className={`bg-[#ffffff3b] w-full fixed z-[999] text-white px-6 lg:px-20 py-6 font-['NeueMontrealRegular'] flex justify-between items-center backdrop-blur-sm ${
+      className={`bg-[#ffffff3b] w-full fixed z-[999] text-white px-6 lg:px-20 py-6 font-['NeueMontreal-Regular'] flex justify-between items-center backdrop-blur-sm ${
         visible ? "" : "hidden"
       }`}
     >
