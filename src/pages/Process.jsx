@@ -106,10 +106,10 @@ export default function Process() {
 
   return (
     <div className="max-w-auto mt-4 ">
-      <h1 className="md:text-5xl text-lg px-8  font-['NeueMontreal-Regular']">
-        Comprehensive approach
+      <h1 className="md:text-5xl text-xl font-extrabold md:px-8 px-4  font-['NeueMontreal-Regular']">
+        Comprehensive approach :
       </h1>
-      <div className="mt-8 shadow-md rounded-md">
+      <div className="md:mt-8 mt-4 shadow-md rounded-md">
         {accordions.map((accordion) => (
           <Accordion
             key={accordion.id}

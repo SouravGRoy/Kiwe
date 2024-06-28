@@ -25,7 +25,7 @@ export default function LandingW() {
 
   return (
     <div className="pt-32 md:px-14 px-6 md:pt-36 relative">
-      <h1 className="md:text-9xl text-6xl font-semibold uppercase font-['Founders_Grotesk_X-Condensed']">
+      <h1 className="md:text-9xl text-6xl font-semibold tracking-wide uppercase font-['Staatliches']">
         work
       </h1>
       <div className="eyes w-full overflow-hidden flex justify-center items-end mt-12 relative">

@@ -6,7 +6,7 @@ export default function ServiceLanding() {
 
   return (
     <div className="md:px-14 px-6 pt-32 md:pt-36 ">
-      <h1 className="md:text-8xl mb-8 text-5xl font-semibold uppercase font-['impact']">
+      <h1 className="md:text-8xl mb-8 text-5xl font-semibold uppercase font-['Staatliches']">
         Services
       </h1>
       <div className="w-full flex justify-center  ">
