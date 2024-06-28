@@ -43,7 +43,7 @@
   }
   @font-face {
     font-family: 'NeueMontreal-Regular';
-    src: url('/vite-project/public/fonts/NeueMontreal-Regular.woff2') format('woff2');
+    src: url('/fonts/NeueMontreal-Regular.woff2') format('woff2');
         
     font-weight: normal;
     font-style: normal;
